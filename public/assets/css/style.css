@@ -1,0 +1,18 @@
+.masonry *{
+    margin: 0;
+    padding: 0;
+}
+.masonry {
+    columns: 4;
+    column-gap: 40px;
+}
+
+.masonry .cardx {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.masonry .cardx img{
+    width: 100%;
+    border-radius: 20px;
+}
