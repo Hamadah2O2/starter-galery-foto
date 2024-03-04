@@ -55,4 +55,9 @@ abstract class BaseController extends Controller
 
         // E.g.: $this->session = \Config\Services::session();
     }
+    protected function isLogedIn(){
+        if (!session()->get('username')){
+            response()->redirect(base_url('auth/login'));
+        }
+    }
 }

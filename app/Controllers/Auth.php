@@ -38,7 +38,7 @@ class Auth extends BaseController
                 d($user);
                 $ds = [
                     'username'=>$d['username'],
-                    'id_user'=>$user['id'],
+                    'user_id'=>$user['id'],
                     'isLogin'=>true
                 ];
                 session()->set($ds);
@@ -85,7 +85,7 @@ class Auth extends BaseController
 
     public function logout(){
         session()->destroy();
-        return redirect()->to('21/');
+        return redirect()->to('/');
     }
     
 }
