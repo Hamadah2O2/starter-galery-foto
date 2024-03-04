@@ -4,9 +4,41 @@
 <?= $this->include('part/nav') ?>
 <div class="container mt-5">
     <div class="container-fluid">
-        <div class="card">
-            <img src="<?= base_url('assets/img/1.jpg') ?>" class="card-img-top" alt="">
-            <div class="card-body">
+        <div class="masonry">
+            <div class="box">
+                <div class="card">
+                    <img src="<?= base_url('assets/img/1.jpg') ?>" class="card-img" alt="">
+                </div>
+                <span>Ini Gambar</span>
+            </div>
+            <div class="box">
+                <div class="card">
+                    <img src="<?= base_url('assets/img/3.png') ?>" class="card-img" alt="">
+                </div>
+                <span>Ini Gambar</span>
+            </div>
+            <div class="box">
+                <div class="card">
+                    <img src="<?= base_url('assets/img/2.jpg') ?>" class="card-img" alt="">
+                </div>
+                <span>Ini Gambar</span>
+            </div>
+            <div class="box">
+                <div class="card">
+                    <img src="<?= base_url('assets/img/4.png') ?>" class="card-img" alt="">
+                </div>
+                <span>Ini Gambar</span>
+            </div>
+            <div class="box">
+                <div class="card">
+                    <img src="<?= base_url('assets/img/5.png') ?>" class="card-img" alt="">
+                </div>
+                <span>Ini Gambar</span>
+            </div>
+            <div class="box">
+                <div class="card">
+                    <img src="<?= base_url('assets/img/6.png') ?>" class="card-img" alt="">
+                </div>
                 <span>Ini Gambar</span>
             </div>
         </div>

@@ -5,8 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?= $title ?></title>
     <link rel="stylesheet" href="<?= base_url() ?>assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="<?= base_url() ?>assets/css/style.css">
 </head>
 <body>
     <?= $this->renderSection('content') ?>
+
+    <script src="<?= base_url() ?>assets/js/bootstrap.js"></script>
+    <script src="<?= base_url() ?>assets/js/bootstrap.bundle.js"></script>
 </body>
 </html>
