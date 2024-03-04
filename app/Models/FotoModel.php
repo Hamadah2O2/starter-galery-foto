@@ -6,7 +6,7 @@ use CodeIgniter\Model;
 
 class FotoModel extends Model
 {
-    protected $table            = 'fotos';
+    protected $table            = 'foto';
     protected $primaryKey       = 'id';
     protected $useAutoIncrement = true;
     protected $returnType       = 'array';
