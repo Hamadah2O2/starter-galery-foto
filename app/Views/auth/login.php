@@ -7,16 +7,7 @@
         <h2 class="card-title">Login</h2>
       </div>
       <div class="card-body">
-      <?php if(session()->getFlashdata('error')): ?>
-        <div class="alert alert-danger">
-            <?= session()->getFlashdata('error') ?>
-        </div>
-        <?php endif ?>
-        <?php if(session()->getFlashdata('success')): ?>
-        <div class="alert alert-success">
-            <?= session()->getFlashdata('success') ?>
-        </div>
-        <?php endif ?>
+        <?= $this->include('part/alert') ?>
         <form action="<?= base_url('auth/login') ?>" method="post">
             <input type="text" name="username" class="form-control mb-3" id="username" value="<?= old('username') ?>" placeholder="Username" required>
             <input type="password" name="password" class="form-control mb-3" id="password" placeholder="Password" required>
